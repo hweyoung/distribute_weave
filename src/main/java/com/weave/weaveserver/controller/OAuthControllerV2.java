@@ -89,7 +89,7 @@ public class OAuthControllerV2 {
         if(getUser==null){
             UserRequest.join joinUser = new UserRequest.join(profile.getKakao_account().getEmail(), profile.getProperties().getNickname(), "kakao");
             userService.joinUser(joinUser);
-            return ResponseEntity.ok(new JsonResponse(200,"kakaoLogin",profile));
+            return ResponseEntity.ok(new JsonResponse(200,"kakaoLogin","success"));
         }else{
             UserRequest.login loginUser = new UserRequest.login(getUser.getEmail(),getUser.getName(),getUser.getLoginId());
             return ResponseEntity.ok(new JsonResponse(200,"kakaoLogin",loginUser));
