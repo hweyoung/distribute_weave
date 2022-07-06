@@ -29,7 +29,7 @@ public class SwaggerConfig extends WebMvcConfigurationSupport {
         return new Docket(DocumentationType.SWAGGER_2)
                 .useDefaultResponseMessages(false)
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("shop.wave-weave"))
+                .apis(RequestHandlerSelectors.basePackage("com.weave.weaveserver"))
                 .paths(PathSelectors.any())
                 .build()
                 .apiInfo(metaData());
@@ -40,7 +40,7 @@ public class SwaggerConfig extends WebMvcConfigurationSupport {
                 .description("Project Portpolio")
                 .version("0.1.0")
                 .termsOfServiceUrl("Terms of service")
-                .contact(new Contact("codefolio", "https://github.com/UMC-WEAVE", ""))
+                .contact(new Contact("github : WEAVE", "https://github.com/UMC-WEAVE", ""))
                 .license("Apache License Version 2.0")
                 .licenseUrl("https://www.apache.org/licenses/LICENSE-2.0")
                 .build();

@@ -36,14 +36,12 @@ dependencies {
 
 	//swagger
 	implementation 'io.springfox:springfox-boot-starter:3.0.0'
+	implementation "io.springfox:springfox-swagger-ui:3.0.0"
 
 	//Database
 	runtimeOnly 'mysql:mysql-connector-java'
 
-//	//Lombok
-//	compileOnly 'org.projectlombok:lombok'
-//	annotationProcessor 'org.projectlombok:lombok'
-//	testAnnotationProcessor 'org.projectlombok:lombok'
+	//Lombok
 	compileOnly 'org.projectlombok:lombok:1.18.10'
 	annotationProcessor 'org.projectlombok:lombok:1.18.10'
 }
